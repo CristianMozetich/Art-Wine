@@ -2,7 +2,7 @@
 import './CartWidget.css'
 
 const CartWidget = () => {
-    const cartImg = "../src/assets/img/cart.png"
+    const cartImg = "./src/assets/img/cart.png"
     return (
         <div className='d-flex'>
             <img className='cart m-2' src={cartImg} alt="cart" />

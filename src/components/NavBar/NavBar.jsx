@@ -3,7 +3,7 @@ import './NavBar.css'
 import CartWidget from '../CartWidget/CartWidget'
 
 const NavBar = () => {
-  const imgLogo = "../src/assets/img/argLogo.avif"
+  const imgLogo = "./src/assets/img/argLogo.avif"
   return (
       <header className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
