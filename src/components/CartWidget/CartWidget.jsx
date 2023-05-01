@@ -5,7 +5,7 @@ const CartWidget = () => {
     const cartImg = "./assets/img/cart.png"
     return (
         <div className='d-flex justify-content-end m-2 p-2'>
-            <img className='cart m-2' src={cartImg} alt="cart" />
+            <img className='cart m-0' src={cartImg} alt="cart" />
             <p>10</p>
         </div>
   )
