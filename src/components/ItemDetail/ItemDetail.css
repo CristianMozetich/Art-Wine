@@ -1,6 +1,8 @@
 .contenedorItem{
     text-align: center;
     width: 900px;
+    background-color: rgb(250, 215, 215);
+    border-radius: 50px;
 }
 img{
     width: 400px;

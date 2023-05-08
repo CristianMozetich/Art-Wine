@@ -1,7 +1,7 @@
 import './NavBar.css'
 
 const NavBar = () => {
-  const imgLogo = "./assets/img/wineLogo-removebg-preview.png"
+  const imgLogo = "./assets/img/wineLogo-removebg-preview-removebg-preview.png"
   return (
       <header className="navbar navbar-expand-lg bg-white p-0">
         <div className="container-fluid p-0 m-3">
