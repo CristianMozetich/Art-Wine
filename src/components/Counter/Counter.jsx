@@ -1,40 +1,22 @@
-import { useState, useEffect } from "react"
-
-const Counter = ({start, stock}) => {
-    
+import { useState } from "react"
 
 
-    const [counter, setCounter] = useState(start);
-    const increaseCounter = ()=>{
-        if (counter < stock){
-            setCounter(counter + 1);
+export const Counter = (valorinical, valorMaximo) => {
+    const [contador, setContador] = useState(null);
+
+    const incrementar = ()=>{
+        if ( contador < valorMaximo){
+            setContador (contador + 1)
+        } 
+    }
+
+    const decrementar = ()=>{
+        if ( contador > valorinical){
+            setContador (contador - 1)
         }
     };
 
-    useEffect(()=>{
-        console.log("se ultilizo useEffect");
-        document.title = `contador : ${counter}`;
-
-    },[counter])
-
-    const removeProduct = ()=>{
-        if(counter > start){
-            setCounter(counter - 1);
-        };
-    };
-    const addToCart = ()=>{
-        console.log(`se agrego ${counter} items` )
-    }
-  return (
-    <div className="d-flex m-5">
-      <button className="btn m-2 bg-primary" onClick={increaseCounter}> + </button> 
-      <strong className="m-2">{counter}</strong>
-      <button className="btn m-2 bg-primary" onClick={removeProduct}> - </button>
-      <br />
-      <br />
-      <button className="btn bg-success" onClick={addToCart}>Add to cart</button>
-    </div>
-  )
+  return {contador, incrementar, decrementar};
 }
 
-export default Counter
+
