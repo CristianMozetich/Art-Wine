@@ -5,14 +5,15 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import ContainerArticle from './components/ContainerArticle/ContainerArticle'
 
+
 function App() {
 
   return (
     <>
       <NavBar />
       <ContainerArticle />
-      <CartWidget />
       <ItemListContainer/>
+      <CartWidget />
       <ItemDetailContainer/>
     </>
   )

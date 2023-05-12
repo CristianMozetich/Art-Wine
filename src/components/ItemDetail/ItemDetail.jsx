@@ -1,13 +1,13 @@
 import './ItemDetail.css'
-import Hooks from '../Hooks/Hooks'
+import Hooks from '../Hooks/HooksCounter'
 
 const ItemDetail = ({img, name, desc}) => {
   return (
-    <div className="contenedorItem container align-items-center">
-      <h2>{name}</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia quia deleniti possimus ipsam vitae illo odio dicta. Magnam quam perferendis tempore.</p>
+    <div className="contenedorItem align-items-center d-flex m-4 p-4 flex-wrap">
+      <h2 className='m-2'>{name}</h2>
+      <p className='m-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.</p>
       <img src={img} alt={name} />
-      <h3>${desc}</h3>
+      <h2 className='m-4 p-4'>${desc}</h2>
       <Hooks />
     </div>
   )
