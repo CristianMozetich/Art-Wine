@@ -1,3 +1,7 @@
 .artWine{
     display: flex;
 }
+
+img{
+    border-radius: 20px;
+}

@@ -12,8 +12,8 @@ function App() {
     <>
       <NavBar />
       <ContainerArticle />
-      <ItemListContainer/>
       <CartWidget />
+      <ItemListContainer/>
       <ItemDetailContainer/>
     </>
   )

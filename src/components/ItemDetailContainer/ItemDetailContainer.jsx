@@ -11,7 +11,7 @@ const ItemDetailContainer = () => {
         .then(res => setproductos(res))
     },[])
   return (
-    <div className='container'>
+    <div>
       <ItemDetail {...productos} />
     </div>
   )
