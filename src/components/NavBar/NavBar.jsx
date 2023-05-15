@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import CartWidget from '../CartWidget/CartWidget'
 
 const NavBar = () => {
-  const imgLogo = "./assets/img/wineLogo-removebg-preview-removebg-preview.png"
+  const imgLogo = "../assets/img/wineLogo-removebg-preview-removebg-preview.png"
   return (
       <header className="navbar navbar-expand-lg bg-white p-0 justify-content-end  ">
         <div className="container-fluid p-0 m-3">
@@ -17,20 +17,17 @@ const NavBar = () => {
           <nav className="collapse navbar-collapse justify-content-start" id="navbarNav">
             <ul className="navbar-nav align-items-center">
               <li className="nav-item m-3">
-                <NavLink to={"/"}>Home</NavLink>
+                <Link to={"/"}>Home</Link>
               </li>
               <li className="nav-item dropdown m-3">
-                <NavLink className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a className="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">
                  Wines
-                </NavLink>
+                </a>
                 <ul className="dropdown-menu">
-                  <li className="nav-item m-3"><NavLink to={"/ItemListContainer"}>Malbec</NavLink></li>
-                  <li><a className="dropdown-item" href="#">Cabernet Savignon</a></li>
-                  <li><a className="dropdown-item" href="#">Merlot</a></li>
+                  <li className="nav-item m-3"><NavLink to={`/categoria/1`}>Malbec</NavLink></li>
+                  <li className="nav-item m-3"><NavLink to={`/categoria/2`}>Cabernet Savignon</NavLink></li>
+                  <li className="nav-item m-3"><NavLink to={`/categoria/3`}>Merlot</NavLink></li>
                 </ul>
-              </li>
-              <li className="nav-item m-3">
-                <NavLink to={"/ItemDetailContainer"}>Details</NavLink> 
               </li>
               <li className="nav-item m-3">
                 <NavLink>Tastings & Events</NavLink>
