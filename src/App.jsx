@@ -5,6 +5,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import ContainerArticle from './components/ContainerArticle/ContainerArticle'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Form from './components/Form/Form'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={ <ContainerArticle /> } />
         <Route path='/categoria/:idCategoria' element={ <ItemListContainer/> } />
         <Route path='/Item/:idItem' element={ <ItemDetailContainer/> } />
+        <Route path='/formulario' element={<Form/>} />
       </Routes>
     </BrowserRouter>
     <Footer />

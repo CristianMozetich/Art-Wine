@@ -25,12 +25,12 @@ const NavBar = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li className="nav-item m-3"><NavLink to={`/categoria/1`}>Malbec</NavLink></li>
-                  <li className="nav-item m-3"><NavLink to={`/categoria/2`}>Cabernet Savignon</NavLink></li>
+                  <li className="nav-item m-3"><NavLink to={`/categoria/2`}>Cabernet Sauvignon</NavLink></li>
                   <li className="nav-item m-3"><NavLink to={`/categoria/3`}>Merlot</NavLink></li>
                 </ul>
               </li>
               <li className="nav-item m-3">
-                <NavLink>Tastings & Events</NavLink>
+                <NavLink to={`/formulario`}>Tastings & Events</NavLink>
               </li>
             </ul>
           </nav>
