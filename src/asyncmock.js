@@ -5,6 +5,7 @@ const products = [{
     price: 10,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
     idCat: "1",
+    stock: 10,
 },
 {
     id: "2",
@@ -13,6 +14,7 @@ const products = [{
     price: 15,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
     idCat: "1",
+    stock: 10,
 },
 {
     id: "3",
@@ -21,6 +23,7 @@ const products = [{
     price: 20,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
     idCat: "2",
+    stock: 10,
 },
 {
     id: "4",
@@ -29,6 +32,7 @@ const products = [{
     price: 25,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
     idCat: "3",
+    stock: 10,
 }];
 
 export const getProducts = ()=>{

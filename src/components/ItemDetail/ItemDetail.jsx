@@ -1,14 +1,38 @@
 import './ItemDetail.css'
-import Hooks from '../Hooks/HooksCounter'
+import ItemCount from '../ItemCount/ItemCount'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { CartContext } from '../../context/CartContext'
+import { useContext } from 'react'
 
-const ItemDetail = ({img, name, price, desc}) => {
+
+
+
+const ItemDetail = ({id, img, name, price, desc, stock}) => {
+  const [agregarCantidad, setAgregarCantidad] = useState(0);
+
+  const { addToCart } = useContext(CartContext)
+
+
+  const manejadorCantidad = (cantidad)=>{
+    setAgregarCantidad(cantidad);
+    //console.log("productos agregados" + cantidad);
+
+    const item = {id, name, price};
+    addToCart(item, cantidad)
+
+  }
+
   return (
     <div className="contenedorItem align-items-center d-flex m-5 p-5 flex-wrap">
       <h2 className='m-2'>{name}</h2>
       <h5 className='m-2'>{desc}</h5>
       <img src={img} alt={name} />
       <h2 className='m-4 p-4'>${price}</h2>
-      <Hooks />
+      {
+        agregarCantidad > 0 ? (<Link to="/cart" > Terminar Compra </Link>) : (<ItemCount inicial={1} stock={stock}
+         funcionAgregar={manejadorCantidad}></ItemCount>)
+      }
     </div>
   )
 }

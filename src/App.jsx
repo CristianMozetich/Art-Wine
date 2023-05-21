@@ -19,6 +19,7 @@ function App() {
         <Route path='/categoria/:idCategoria' element={ <ItemListContainer/> } />
         <Route path='/Item/:idItem' element={ <ItemDetailContainer/> } />
         <Route path='/formulario' element={<Form/>} />
+        <Route path='*' element={<h2>Sitio en constricción</h2>} />
       </Routes>
     </BrowserRouter>
     <Footer />
