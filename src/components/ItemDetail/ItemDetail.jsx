@@ -8,6 +8,7 @@ import { useContext } from 'react'
 
 
 
+
 const ItemDetail = ({id, img, name, price, desc, stock}) => {
   const [agregarCantidad, setAgregarCantidad] = useState(0);
 
