@@ -8,8 +8,7 @@ const NavBar = () => {
       <header className="navbar navbar-expand-lg bg-white p-0 justify-content-end  ">
         <div className="container-fluid p-0 m-3">
           <Link to={"/"} className='d-flex align-items-center'>
-            <h2 className='m-0'>Wine Shop</h2>
-            <img className='imgLogo m-0' src={imgLogo} alt="argLogo"/>
+            <img className='imgLogo m-0 p-0' src={imgLogo} alt="argLogo"/>
           </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
