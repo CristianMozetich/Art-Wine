@@ -3,7 +3,7 @@ import './FormArticle.css'
 const FormArticle = () => {
     const imgForm = "../../../public/assets/img/wineArt.avif"
   return (
-    <div className="formArticle m-5 text-center d-flex flex-column align-items-center">
+    <div className="formArticle m-2 text-center d-flex flex-column align-items-center">
         <h2>Tastings & Events</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, similique quasi aperiam ut dicta reiciendis, laboriosam illum vitae cum nam modi neque repellat iusto aliquid ratione, architecto asperiores explicabo iste?</p>
         <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, incidunt.</strong>
