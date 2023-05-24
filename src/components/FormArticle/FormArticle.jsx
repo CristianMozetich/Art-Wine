@@ -1,7 +1,7 @@
 import './FormArticle.css'
 
 const FormArticle = () => {
-    const imgForm = "../../../public/assets/img/wineArt.avif"
+    const imgForm = "../assets/img/wineArt.avif"
   return (
     <div className="formArticle m-2 text-center d-flex flex-column align-items-center">
         <h2>Tastings & Events</h2>
