@@ -153,7 +153,7 @@ const products = [{
 },
 {
     id: "18",
-    img: "../public/assets/img/cs/bicicleta-cabernet-sauvignon-2018-botella-750-cc.png",
+    img: "../assets/img/cs/bicicleta-cabernet-sauvignon-2018-botella-750-cc.png",
     name: "Bicicleta Cabernet Sauvignon 2018",
     price: 25,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
@@ -162,7 +162,7 @@ const products = [{
 },
 {
     id: "19",
-    img: "../public/assets/img/cs/cayetana-cabernet-sauvignon.png",
+    img: "../assets/img/cs/cayetana-cabernet-sauvignon.png",
     name: "Cayetana Cavernet Sauvignon",
     price: 25,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
@@ -171,7 +171,7 @@ const products = [{
 },
 {
     id: "20",
-    img: "../public/assets/img/cs/cono-sur-reserva-especial-cabernet-sauvignon-2018-750-cc.png",
+    img: "../assets/img/cs/cono-sur-reserva-especial-cabernet-sauvignon-2018-750-cc.png",
     name: "Cono Sur Reserva Cabernet Sauvignon 2018",
     price: 25,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
@@ -180,7 +180,7 @@ const products = [{
 },
 {
     id: "21",
-    img: "../public/assets/img/cs/diablo-volcanic-cabernet.png",
+    img: "../assets/img/cs/diablo-volcanic-cabernet.png",
     name: "Diablo Volcanic Cabernet Sauvignon",
     price: 25,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
@@ -189,7 +189,7 @@ const products = [{
 },
 {
     id: "22",
-    img: "../public/assets/img/cs/silencio-cabernet-sauvignon-2015-j9.png",
+    img: "../assets/img/cs/silencio-cabernet-sauvignon-2015-j9.png",
     name: "Silencio Cabernet Sauvignon 2015",
     price: 25,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
@@ -198,7 +198,7 @@ const products = [{
 },
 {
     id: "23",
-    img: "../public/assets/img/cs/unrated-cabernet-sauvignon.png",
+    img: "../assets/img/cs/unrated-cabernet-sauvignon.png",
     name: "Unrated Cabernet Sauvignon",
     price: 25,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
@@ -207,7 +207,7 @@ const products = [{
 },
 {
     id: "24",
-    img: "../public/assets/img/cs/vino-alyan-gran-reserva-cabernet-sauvignon-botella-750cc.png",
+    img: "../assets/img/cs/vino-alyan-gran-reserva-cabernet-sauvignon-botella-750cc.png",
     name: "Alyan Gran Reserva Cabernet Sauvignon",
     price: 25,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
@@ -216,7 +216,7 @@ const products = [{
 },
 {
     id: "25",
-    img: "../public/assets/img/cs/vino-aquitania-cabernet-sauvignon-botella-750cc.png",
+    img: "../assets/img/cs/vino-aquitania-cabernet-sauvignon-botella-750cc.png",
     name: "Aquitania Cabernet Sauvignon",
     price: 25,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
@@ -225,7 +225,7 @@ const products = [{
 },
 {
     id: "26",
-    img: "../public/assets/img/cs/vino-casas-del-toqui-gran-toqui-cabernet-sauvignon.png",
+    img: "../assets/img/cs/vino-casas-del-toqui-gran-toqui-cabernet-sauvignon.png",
     name: "Casas Del Toqui Gran Toqui Cabernet Sauvignon",
     price: 25,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
@@ -234,7 +234,7 @@ const products = [{
 },
 {
     id: "27",
-    img: "../public/assets/img/cs/vino-casas-del-toqui-reserva-barrel-cabernet-sauvignon.png",
+    img: "../assets/img/cs/vino-casas-del-toqui-reserva-barrel-cabernet-sauvignon.png",
     name: "Casas Del Toqui Reserva Barrel Cabernet Sauvignon",
     price: 25,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
@@ -243,7 +243,7 @@ const products = [{
 },
 {
     id: "28",
-    img: "../public/assets/img/cs/vino-chocalan-reserva-carmenere-750-cc.png",
+    img: "../assets/img/cs/vino-chocalan-reserva-carmenere-750-cc.png",
     name: "Chocalan Reserva Carmenere",
     price: 25,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
@@ -252,7 +252,7 @@ const products = [{
 },
 {
     id: "29",
-    img: "../public/assets/img/cs/vino-kaiken-ultra-cabernet-sauvignon-750cc.png",
+    img: "../assets/img/cs/vino-kaiken-ultra-cabernet-sauvignon-750cc.png",
     name: "Kaiken Ultra Cabernet Sauvignon",
     price: 25,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
@@ -261,7 +261,7 @@ const products = [{
 },
 {
     id: "30",
-    img: "../public/assets/img/cs/vino-los-vascos-cabernet-sauvignon-reserva.png",
+    img: "../assets/img/cs/vino-los-vascos-cabernet-sauvignon-reserva.png",
     name: "Los Vascos Cabernet Sauvignon",
     price: 25,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
@@ -270,7 +270,7 @@ const products = [{
 },
 {
     id: "31",
-    img: "../public/assets/img/cs/vino-odfjell-orzada-cabernet-sauvignon-750cc.png",
+    img: "../assets/img/cs/vino-odfjell-orzada-cabernet-sauvignon-750cc.png",
     name: "Ozarda Cabernet Sauvignon",
     price: 25,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
