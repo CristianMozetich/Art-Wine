@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react'
 import { getUnProducto } from '../../asyncmock'
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
+import './ItemDetailContaine.css'
 
 
 const ItemDetailContainer = () => {
@@ -14,7 +15,7 @@ const ItemDetailContainer = () => {
         .then(res => setproductos(res))
     },[idItem])
   return (
-    <div>
+    <div className='itemDetailContainer'>
       <ItemDetail {...productos} />
     </div>
   )

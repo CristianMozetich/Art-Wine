@@ -5,7 +5,7 @@ import CartWidget from '../CartWidget/CartWidget'
 const NavBar = () => {
   const imgLogo = "../assets/img/wineLogo-removebg-preview-removebg-preview.png"
   return (
-      <header className="navbar navbar-expand-lg bg-white p-0 justify-content-end">
+      <header className="navbar navbar-expand-lg bg-white p-0 justify-content-end fixed-top">
         <div className="container-fluid p-0 m-0">
           <Link to={"/"} className='d-flex align-items-center'>
             <img className='imgLogo m-0 p-0' src={imgLogo} alt="argLogo"/>

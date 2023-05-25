@@ -26,7 +26,7 @@ const Form = () => {
     
 
   return (
-    <div className="d-flex flex-wrap">
+    <div className="form d-flex flex-wrap">
       <FormArticle/>
       <form className="formulario text-center justify-content-center" onSubmit={hanldeClick}>
           <label className="p-3 m-2" htmlFor="name"><input type="text" id='name' placeholder="Name" className="p-2" onChange={(e)=>setName(e.target.value)} value={name} /></label>
