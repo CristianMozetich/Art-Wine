@@ -23,7 +23,7 @@ const NavBar = () => {
                 <Link to={"/"} style={linkStyle}>Home</Link>
               </li>
               <li className="nav-item dropdown m-3">
-                <a className="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">
+                <a className="nav-link dropdown-toggle" style={linkStyle} href="#"  data-bs-toggle="dropdown" aria-expanded="false">
                  Wines
                 </a>
                 <ul className="dropdown-menu">
