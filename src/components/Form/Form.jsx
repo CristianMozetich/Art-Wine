@@ -9,11 +9,12 @@ const Form = () => {
     const [surname, setSurname] = useState("")
     const [email, setEmail] = useState("")
     const [phone, setPhone] = useState("")
+    const [comentario, setComentario] = useState("")
 
     const hanldeClick = (e)=>{
         e.preventDefault();
 
-        const nuevoCliente = {name, surname, email, phone}
+        const nuevoCliente = {name, surname, email, phone, comentario}
 
         console.log(nuevoCliente);
 
@@ -21,6 +22,7 @@ const Form = () => {
         setSurname("")
         setEmail("")
         setPhone("")
+        setComentario("")
     }
     
     
@@ -41,7 +43,7 @@ const Form = () => {
           <label className="p-3 m-2" htmlFor="phone"><input type="text" id="phone" placeholder="Phone" className="p-2" onChange={(e)=> setPhone(e.target.value)} value={phone} /></label>
           
 
-          <label className="p-3 m-2" htmlFor="comentario"><textarea name="comentario" id="comentario" className="p-2" placeholder="Message"></textarea></label>
+          <label className="p-3 m-2" htmlFor="comentario"><textarea name="comentario" id="comentario" className="p-2" placeholder="Message" onChange={(e)=> setComentario(e.target.value)} value={comentario}></textarea></label>
           
 
           <button className="btn btn-primary m-2 p-2" type='submit'>Send</button>

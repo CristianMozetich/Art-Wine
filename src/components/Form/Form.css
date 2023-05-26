@@ -29,3 +29,9 @@
 
 ::placeholder { color: white; text-align: center;}
 
+@media (max-width:1000px){
+    .form{
+        padding-top: 160px;
+    }
+}
+

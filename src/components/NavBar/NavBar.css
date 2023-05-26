@@ -1,5 +1,5 @@
 .navbar{
-    border-bottom: 1px solid black;
+    background-color: #e0e1dd;
 }
 .imgLogo{
     width: 5rem;
@@ -8,3 +8,4 @@
 li{
     cursor: pointer;
 }
+
