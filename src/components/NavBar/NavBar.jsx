@@ -14,7 +14,7 @@ const NavBar = () => {
           <Link to={"/"} style={linkStyle} className='d-flex align-items-center'>
             <img className='imgLogo m-0 p-0' src={imgLogo} alt="argLogo"/>
           </Link>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button className="navbar-toggler m-3 bg-secondary"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
           </button>
           <nav className="collapse navbar-collapse justify-content-start" id="navbarNav">
@@ -22,8 +22,8 @@ const NavBar = () => {
               <li className="nav-item m-3">
                 <Link to={"/"} style={linkStyle}>Home</Link>
               </li>
-              <li className="nav-item dropdown m-3">
-                <a className="nav-link dropdown-toggle" style={linkStyle} href="#"  data-bs-toggle="dropdown" aria-expanded="false">
+              <li className="nav-item dropdown" data-bs-theme="dark">
+                <a className="nav-link dropdown-toggle text-center" style={linkStyle} href="#"  data-bs-toggle="dropdown" aria-expanded="false">
                  Wines
                 </a>
                 <ul className="dropdown-menu">

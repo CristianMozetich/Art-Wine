@@ -7,6 +7,7 @@ import ContainerArticle from './components/ContainerArticle/ContainerArticle'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Form from './components/Form/Form'
 import { CartProvider } from './context/CartContext'
+import Cart from './components/Cart/Cart'
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
             </CartProvider>
           } />
         <Route path='/formulario' element={<Form/>} />
-        <Route path='*' element={<h2>Sitio en constricción</h2>} />
+        <Route path='/cart' element={<Cart/>} />
       </Routes>
     </BrowserRouter>
     <Footer />
