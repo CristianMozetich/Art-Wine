@@ -1,6 +1,6 @@
 const products = [{
     id: "1",
-    img: "/assets/img/Barda_Pinot_Noir_2020-removebg-preview.png",
+    img: "../assets/img/Barda_Pinot_Noir_2020-removebg-preview.png",
     name: "Barda Pinot Noir 2020",
     price: 10,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
@@ -9,7 +9,7 @@ const products = [{
 },
 {
     id: "2",
-    img: "/assets/img/trisquel-series-malbec-750cc.png",
+    img: "../assets/img/trisquel-series-malbec-750cc.png",
     name: "Trisquel Series Malbec",
     price: 10,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
@@ -18,7 +18,7 @@ const products = [{
 },
 {
     id: "3",
-    img: "/assets/img/trivento-eolo-malbec-2011-botella-750-cc-removebg-preview.png",
+    img: "../assets/img/trivento-eolo-malbec-2011-botella-750-cc-removebg-preview.png",
     name: "Trivento Eolo Malbec 2011",
     price: 10,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
