@@ -7,7 +7,7 @@ export const CartProvider = ({children})=>{
     
     const [cart, setCart] = useState([])
     
-    console.log(cart)
+    
 
     const addToCart = (item, cantidad)=>{
         if(!isInCart(item.id)){
@@ -15,6 +15,7 @@ export const CartProvider = ({children})=>{
         }else{
             console.log("producto ya agregado!")
         }
+        console.log(item)
     };
 
     const isInCart = (id)=>{
@@ -22,7 +23,7 @@ export const CartProvider = ({children})=>{
     }
 
     const deleteProd = (id)=>{
-        const cartFilter = cart.filter (prod => prod.id !== id);
+        const cartFilter = cart.filter (prod => prod.item.id !== id);
         setCart(cartFilter);
     };
 

@@ -18,14 +18,22 @@ function App() {
       <NavBar />
       <Routes>
         <Route path='/' element={ <ContainerArticle /> } />
-        <Route path='/categoria/:idCategoria' element={ <ItemListContainer/> } />
+        <Route path='/categoria/:idCategoria' element={
+          <CartProvider>
+            <ItemListContainer/> 
+          </CartProvider>
+          } />
         <Route path='/Item/:idItem' element={
             <CartProvider>
               <ItemDetailContainer />
             </CartProvider>
           } />
         <Route path='/formulario' element={<Form/>} />
-        <Route path='/cart' element={<Cart/>} />
+        <Route path='/cart' element={
+            <CartProvider>
+              <Cart/>
+            </CartProvider>
+          } />
       </Routes>
     </BrowserRouter>
     <Footer />

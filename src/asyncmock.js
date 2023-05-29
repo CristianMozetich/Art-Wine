@@ -1,6 +1,6 @@
 const products = [{
     id: "1",
-    img: "../assets/img/Barda_Pinot_Noir_2020-removebg-preview.png",
+    img: "/assets/img/Barda_Pinot_Noir_2020-removebg-preview.png",
     name: "Barda Pinot Noir 2020",
     price: 10,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
@@ -9,7 +9,7 @@ const products = [{
 },
 {
     id: "2",
-    img: "../assets/img/trisquel-series-malbec-750cc.png",
+    img: "/assets/img/trisquel-series-malbec-750cc.png",
     name: "Trisquel Series Malbec",
     price: 10,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
@@ -18,7 +18,7 @@ const products = [{
 },
 {
     id: "3",
-    img: "../assets/img/trivento-eolo-malbec-2011-botella-750-cc-removebg-preview.png",
+    img: "/assets/img/trivento-eolo-malbec-2011-botella-750-cc-removebg-preview.png",
     name: "Trivento Eolo Malbec 2011",
     price: 10,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis aliquam aperiam, voluptate voluptas voluptates expedita nostrum mollitia.",
@@ -341,7 +341,7 @@ const products = [{
     stock: 10,
 },
 {
-    id: "38",
+    id: "39",
     img: "../assets/img/merlot/montes-alpha-merlot-removebg-preview.png",
     name: "Montes Alpha Merlot",
     price: 25,
@@ -350,7 +350,7 @@ const products = [{
     stock: 10,
 },
 {
-    id: "39",
+    id: "40",
     img: "../assets/img/merlot/vino-alyan-gran-reserva-cabernet-sauvignon-botella-750cc-removebg-preview.png",
     name: "Alyan Gran Reserva Merlot",
     price: 25,
@@ -359,7 +359,7 @@ const products = [{
     stock: 10,
 },
 {
-    id: "40",
+    id: "41",
     img: "../assets/img/merlot/vino-montes-classic-series-merlot-reserva-750cc-removebg-preview.png",
     name: "Montes Merlot",
     price: 25,
@@ -368,7 +368,7 @@ const products = [{
     stock: 10,
 },
 {
-    id: "41",
+    id: "42",
     img: "../assets/img/merlot/vino-montgras-day-one-merlot-750cc-removebg-preview.png",
     name: "Montgras Day One Merlot",
     price: 25,
@@ -381,7 +381,7 @@ export const getProducts = ()=>{
     return new Promise ((resolve)=>{
         setTimeout(()=>{
             resolve(products)
-        }, 2000)
+        }, 200)
     })
 };
 
@@ -390,7 +390,7 @@ export const getUnProducto = (id)=>{
         setTimeout(()=>{
             const productos = products.find(prod => prod.id === id)
             resolve(productos)
-        }, 2000)
+        }, 200)
     })
 };
 
@@ -399,6 +399,6 @@ export const getProductoPorCategoria = (idCategoria)=>{
         setTimeout(()=>{
             const productoPorCategoria = products.filter(prod => prod.idCat === idCategoria)
             resolve (productoPorCategoria)
-        }, 2000)
+        }, 200)
     })
 };
