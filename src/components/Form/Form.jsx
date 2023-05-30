@@ -1,6 +1,8 @@
 import { useState } from "react"
 import './Form.css'
 import FormArticle from "../FormArticle/FormArticle"
+import { db } from "../../service/config"
+import { addDoc, collection } from "firebase/firestore"
 
 
 
@@ -14,9 +16,13 @@ const Form = () => {
     const hanldeClick = (e)=>{
         e.preventDefault();
 
-        const nuevoCliente = {name, surname, email, phone, comentario}
-
-        console.log(nuevoCliente);
+        addDoc (collection(db, "formulario"), {
+          name : name,
+          surname : surname,
+          email : email,
+          phone : phone,
+          comentario : comentario,
+        })
 
         setName("")
         setSurname("")
