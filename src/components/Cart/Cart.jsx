@@ -12,14 +12,15 @@ const Cart = () => {
   const total = cart.reduce((total, producto)=> total + (producto.item.price * producto.cantidad), 0)
 
 
-  /*if (totalCantidad === 0){
+
+  if (totalCantidad === 0){
     return (
-      <>
+      <div className='carritoVacio m-3 text-center'>
         <h2>Cart is Empty</h2>
         <Link to='/'> HOME </Link>
-      </>
+      </div>
     )
-  }*/
+  }
 
 
   return (

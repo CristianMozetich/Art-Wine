@@ -1,6 +1,7 @@
 import './NavBar.css'
 import { Link, NavLink } from 'react-router-dom'
 import CartWidget from '../CartWidget/CartWidget'
+import { CartProvider } from '../../context/CartContext'
 
 const NavBar = () => {
   const linkStyle = {
@@ -35,7 +36,9 @@ const NavBar = () => {
               <li className="nav-item m-3">
                 <NavLink to={`/formulario`} style={linkStyle}>Tastings & Events</NavLink>
               </li>
-              <CartWidget/>
+              <CartProvider>
+                <CartWidget />
+              </CartProvider>
             </ul>
           </nav>
         </div>

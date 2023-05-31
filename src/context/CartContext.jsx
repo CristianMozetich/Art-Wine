@@ -32,6 +32,7 @@ export const CartProvider = ({children})=>{
         setCart([]);
     }
 
+    
 
     return (
         <CartContext.Provider value={{ cart, addToCart, deleteProd, clearCart }}>
