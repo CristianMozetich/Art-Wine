@@ -36,9 +36,7 @@ const NavBar = () => {
               <li className="nav-item m-3">
                 <NavLink to={`/formulario`} style={linkStyle}>Tastings & Events</NavLink>
               </li>
-              <CartProvider>
                 <CartWidget />
-              </CartProvider>
             </ul>
           </nav>
         </div>

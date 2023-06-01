@@ -2,17 +2,22 @@ import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 import './CartWidget.css'
+import cartImg from '../../../public/assets/img/cartwhite-removebg-preview.png'
+
 
 const CartWidget = () => {
-    const {cart} = useContext(CartContext);
+    const { totalCantidad } = useContext(CartContext);
 
-    const totalCantidad = cart.reduce((total, producto)=> total + producto.cantidad, 0);
+    const linkStyle = {
+        textDecoration: 'none',
+        color: 'inherit',
+    };
+
+
     console.log(totalCantidad)
     
-    const cartImg = "../assets/img/cartwhite-removebg-preview.png"
     return (
-
-        <Link to={'/cart'}>
+        <Link style={linkStyle} to={'/cart'} >
             <img className='cartImg' src={cartImg} alt="cart" />
             {
                 totalCantidad > 0 && <strong> {totalCantidad} </strong>

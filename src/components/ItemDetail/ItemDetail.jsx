@@ -19,7 +19,7 @@ const ItemDetail = ({id, img, name, price, desc, stock}) => {
     setAgregarCantidad(cantidad);
     //console.log("productos agregados" + cantidad);
 
-    const item = {id, name, price, img};
+    const item = {id, name, price, img, cantidad};
     addToCart(item, cantidad)
 
   }

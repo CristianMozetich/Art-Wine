@@ -8,37 +8,27 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Form from './components/Form/Form'
 import { CartProvider } from './context/CartContext'
 import Cart from './components/Cart/Cart'
+import CartWidget from './components/CartWidget/CartWidget'
 
 
 function App() {
-
   return (
-    <>
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path='/' element={ <ContainerArticle /> } />
-        <Route path='/categoria/:idCategoria' element={
-          <CartProvider>
-            <ItemListContainer/> 
-          </CartProvider>
-          } />
-        <Route path='/Item/:idItem' element={
-            <CartProvider>
-              <ItemDetailContainer />
-            </CartProvider>
-          } />
-        <Route path='/formulario' element={<Form/>} />
-        <Route path='/cart' element={
-            <CartProvider>
-              <Cart/>
-            </CartProvider>
-          } />
-      </Routes>
-    </BrowserRouter>
-    <Footer />
-    </>
-  )
+    <CartProvider>
+      <>
+        <BrowserRouter>
+          <NavBar />
+          <Routes>
+            <Route path='/' element={ <ContainerArticle /> } />
+            <Route path='/categoria/:idCategoria' element={<ItemListContainer/>} />
+            <Route path='/Item/:idItem' element={<ItemDetailContainer />} />
+            <Route path='/formulario' element={<Form/>} />
+            <Route path='/cart' element={<Cart/>} />
+          </Routes>
+        </BrowserRouter>
+        <Footer />
+      </>
+    </CartProvider>
+  );
 }
 
 export default App

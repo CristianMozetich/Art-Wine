@@ -24,13 +24,14 @@ const Cart = () => {
 
 
   return (
-    <div className='carrito'>
+    <div className='carrito table m-2 d-flex row'>
       {
         cart.map((producto) => <CartItem key={producto.item.id} producto={producto.item}  {...producto} />)
       }
-      <h3>Total Products: {totalCantidad} </h3>
-      <h3>Total $ {total} </h3>
-      <button onClick={()=>clearCart()}>Delete</button>
+      <td><h3>Total Products: {totalCantidad} </h3></td>
+      <td><h3>Total $ {total} </h3></td>
+      <td><button className='btn btn-success m-2'>Pay</button></td>
+      <td><button className='btn btn-warning m-2' onClick={()=>clearCart()}>Delete</button></td>
     </div>
   )
 }
