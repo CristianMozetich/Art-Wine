@@ -91,6 +91,9 @@ const Checkout = () => {
                 <label htmlFor="emailConfirm">Confirm Email</label>
                 <input type="text" value={emailconfirm} onChange={(e)=>setEmailconfirm(e.target.value)} />
             </div>
+                {
+                    error && <h3> {error} </h3>
+                }
                 <button type="submit" className="btn btn-primary">Pay</button>
       </form>
 
