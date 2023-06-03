@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Form from './components/Form/Form'
 import { CartProvider } from './context/CartContext'
 import Cart from './components/Cart/Cart'
-import CartWidget from './components/CartWidget/CartWidget'
+import Checkout from './components/Checkout/Checkout'
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
             <Route path='/Item/:idItem' element={<ItemDetailContainer />} />
             <Route path='/formulario' element={<Form/>} />
             <Route path='/cart' element={<Cart/>} />
+            <Route path='/checkout' element={<Checkout/>} />
           </Routes>
         </BrowserRouter>
         <Footer />

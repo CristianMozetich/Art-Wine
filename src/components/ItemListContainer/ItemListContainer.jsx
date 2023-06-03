@@ -1,8 +1,9 @@
 import './ItemListContainer.css';
 import { useState, useEffect } from 'react';
-import { getProducts, getProductoPorCategoria } from '../../asyncmock.js';
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
+import { db } from '../../service/config';
+import { getDocs, collection, where, query } from 'firebase/firestore';
 
 
 const ItemListContainer = () => {
@@ -11,14 +12,18 @@ const ItemListContainer = () => {
   const {idCategoria} = useParams()
 
   useEffect(()=>{
+    const misProductos = idCategoria ? query(collection(db, "productos"), where ("idCat", "==", idCategoria)) : collection(db, "productos");
 
-    const funcionProductos = idCategoria ? getProductoPorCategoria : getProducts;
-
-    funcionProductos(idCategoria)
-    .then(res => setProducts(res))
-    .catch(error => console.log (error))
-    
-  }, [idCategoria]);
+    getDocs(misProductos)
+      .then(res =>{
+        const nuevosProductos = res.docs.map(doc =>{
+          const data = doc.data()
+          return {id: doc.id, ...data}
+        })
+        setProducts(nuevosProductos)
+      })
+      .catch (error => console.log(error))
+  }, [idCategoria])
 
   return (
     <div className='vinos text-center'>

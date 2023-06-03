@@ -13,8 +13,6 @@ const CartWidget = () => {
         color: 'inherit',
     };
 
-
-    console.log(totalCantidad)
     
     return (
         <Link style={linkStyle} to={'/cart'} >

@@ -35,7 +35,7 @@ const products = [{
     stock: 10,
 },
 {
-    id: "5",
+    id: " 5",
     img: "../assets/img/trivento-reserve-malbec-2017-botella-750-cc-removebg-preview.png",
     name: "Trivento Reserve Malbec 2017",
     price: 10,
