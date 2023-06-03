@@ -26,7 +26,7 @@ const Checkout = () => {
             setError("The emails do not match");
             return;
         };
-        console.log(name, surname, phone, email, emailconfirm)
+
         setName("");
         setSurname("");
         setPhone("");
