@@ -8,10 +8,10 @@ const CartItem = ({producto, cantidad}) => {
   return (
 
     <tr className="text-center align-items-center d-flex">
-      <td><h5>{producto.name} </h5></td>
+      <td><h6>{producto.name} </h6></td>
       <td><img className="imgCarrito img-fluid" src={producto.img} alt={producto.name} /></td>
-      <td><h5> Quantity : {cantidad} </h5></td>
-      <td><h5> Price: $ {producto.price * cantidad} </h5></td>
+      <td><h6> Quantity : {cantidad} </h6></td>
+      <td><h6> Price: $ {producto.price * cantidad} </h6></td>
       <td><button className="btn btn-warning m-2" onClick={()=> deleteProd(producto.id)}> Delete Prod </button></td>
     </tr>
 

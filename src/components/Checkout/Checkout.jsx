@@ -61,8 +61,8 @@ const Checkout = () => {
 
   return (
     <div className="checkout container">
-      <h1>Checkout</h1>
-      <form onSubmit={handleClick}>
+      <h1 className="text-start m-2 p-2">Checkout</h1>
+      <form className="bg-light" onSubmit={handleClick}>
         {
             cart.map(prod =>(
                 <div key={prod.item.id}>

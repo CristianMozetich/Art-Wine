@@ -32,8 +32,8 @@ const Cart = () => {
           ))}
         </tbody>
       </table>
-      <h3>Total Products: {totalCantidad} </h3>
-      <h3>Total $ {total} </h3>
+      <h4>Total Products {totalCantidad} </h4>
+      <h4>Total $ {total} </h4>
       <Link to={`/checkout`}  className='btn btn-success m-2'>Pay</Link>
       <button className='btn btn-warning m-2' onClick={()=>clearCart()}>Delete</button>
     </div>

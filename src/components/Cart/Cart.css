@@ -1,7 +1,9 @@
 .carrito{
     padding-top: 200px;
+    justify-content: center;
 }
 
 .carritoVacio{
     padding-top: 150px;
 }
+
