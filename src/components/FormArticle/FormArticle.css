@@ -1,6 +1,29 @@
-.formArticle{
+.formArticle {
+    margin: 2rem;
+    text-align: center;
     width: 600px;
-}
-.imgForm{
-    border-radius: 20px;
-}
+  }
+  
+  .formArticle h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .formArticle p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .formArticle strong {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .imgForm {
+    width: 300px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+  }

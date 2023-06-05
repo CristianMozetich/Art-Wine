@@ -1,10 +1,17 @@
 import './Cart.css'
 import { Link } from 'react-router-dom'
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { CartContext } from '../../context/CartContext'
 import CartItem from '../CartItem/CartItem'
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 const Cart = () => {
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   const { cart, clearCart } = useContext(CartContext);
 
   const totalCantidad = cart.reduce((total, producto) => total + producto.cantidad, 0);
@@ -24,7 +31,8 @@ const Cart = () => {
 
 
   return (
-    <div className='carrito m-2 d-flex row container'>
+    <div className='carrito m-2 d-flex row'>
+      <h1 className='text-center m-2 p-2' data-aos="fade-right" data-aos-duration="1000">Your Selected Products</h1>
       <table className='table'>
         <tbody className='tabla'>
           {cart.map((producto) => (

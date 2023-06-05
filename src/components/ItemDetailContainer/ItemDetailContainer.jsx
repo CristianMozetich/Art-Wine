@@ -25,6 +25,7 @@ const ItemDetailContainer = () => {
 
   return (
     <div className='itemDetailContainer'>
+      <h1 className='text-center'>Products Details</h1>
       <ItemDetail {...productos} />
     </div>
   )

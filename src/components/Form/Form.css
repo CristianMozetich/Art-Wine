@@ -1,11 +1,11 @@
 .form{
     padding-top: 100px;
+    justify-content: center;
 }
 .formulario{
     background-color: #5f0f40;
-    max-width: 400px;
-    padding: 10px;
-    margin: 50px auto;
+    width: 600px;
+    margin: 50px;
     border-radius: 10px;
 };
 
