@@ -31,7 +31,7 @@ const Cart = () => {
 
 
   return (
-    <div className='carrito m-2 d-flex row'>
+    <div className='carrito d-flex row'>
       <h1 className='text-center m-2 p-2' data-aos="fade-right" data-aos-duration="1000">Your Selected Products</h1>
       <table className='table'>
         <tbody className='tabla'>
