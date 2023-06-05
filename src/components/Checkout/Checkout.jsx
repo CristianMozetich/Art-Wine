@@ -5,6 +5,7 @@ import { collection, addDoc } from "firebase/firestore"
 import './Checkout.css'
 import Aos from "aos"
 import 'aos/dist/aos.css';
+import Swal from 'sweetalert'
 
 const Checkout = () => {
 
@@ -26,6 +27,7 @@ const Checkout = () => {
     const handleClick = (e)=>{
         e.preventDefault();
 
+
         if(!name || !surname || !phone || !email || !emailconfirm){
             setError("Please complete the information");
             return;
@@ -41,6 +43,7 @@ const Checkout = () => {
         setPhone("");
         setEmail("");
         setEmailconfirm("");
+        Swal('¡Hola!', 'Your payment was completed successfully', 'success');
 
 
         const orden = {
