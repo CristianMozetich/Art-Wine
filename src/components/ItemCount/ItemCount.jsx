@@ -20,6 +20,7 @@ const ItemCount = ({inicial, stock, funcionAgregar}) => {
   return (
     <>
     <div className='d-flex flex-column m-2 p-2'>
+      <h6>Quantity</h6>
     <button className='btn btn-primary m-2' onClick={incrementar}>+</button>
       <strong>{contador}</strong>
       <button className='btn btn-primary m-2' onClick={decrementar}>-</button>
