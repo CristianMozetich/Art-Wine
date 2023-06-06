@@ -5,8 +5,9 @@ const FormArticle = () => {
   return (
     <div className="formArticle m-2 text-center d-flex flex-column align-items-center">
         <h2>Tastings & Events</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, similique quasi aperiam ut dicta reiciendis, laboriosam illum vitae cum nam modi neque repellat iusto aliquid ratione, architecto asperiores explicabo iste?</p>
-        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, incidunt.</strong>
+        <strong>Join us for an exquisite wine tasting experience!</strong>
+        <p>Indulge your senses and embark on a journey through the world of wines. We invite you to be a part of our exclusive wine tasting events, where you can discover exceptional vintages, explore diverse flavors, and deepen your appreciation for the art of winemaking.</p>
+        <strong>Please complete the form to receive the information</strong>
         <img className='imgForm m-2 p-2' src={imgForm} alt="wines" />
     </div>
   )

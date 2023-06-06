@@ -1,13 +1,24 @@
-
+import Aos, { init } from 'aos'
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 import Article from '../Article/Article'
 
 const ContainerArticle = () => {
+
+  useEffect(()=>{
+    Aos.init();
+  },[])
+
   return (
     <>
-    <Article title="ART & WINE" img="../../../assets/img/vinoArt.avif" >
+    <Article title="Unleash Your Senses: A Journey Through Art and Wine" img="../../../assets/img/vinoArt.avif" >
         <img className='imgArticle m-2' src="../../../assets/img/vinosArt.avif" alt="wine" />
         <img className='imgArticle m-2' src="../../../assets/img/wineArt2.jpg" alt="vino" />
-        <strong>esto es un agregado de contenido a un articulo mediante "children"</strong>
+        <ul>
+          <li data-aos="fade-right" data-aos-duration="1000">Immerse yourself in the rich tapestry of flavors and aromas.</li>
+          <li data-aos="fade-left" data-aos-duration="1000">Discover the perfect wine to elevate every occasion.</li>
+          <li data-aos="fade-right" data-aos-duration="1000">Unveil the profound connection between art and wine.</li>
+        </ul>
     </Article>
     </>
   )
