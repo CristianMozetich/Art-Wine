@@ -1,7 +1,9 @@
-import Aos, { init } from 'aos'
+import Aos from 'aos'
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import Article from '../Article/Article'
+
+
 
 const ContainerArticle = () => {
 
