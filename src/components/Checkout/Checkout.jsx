@@ -43,7 +43,7 @@ const Checkout = () => {
         setPhone("");
         setEmail("");
         setEmailconfirm("");
-        Swal('¡Hola!', 'Your payment was completed successfully', 'success');
+        Swal('¡Thanks!', 'Your payment was completed successfully', 'success');
 
 
         const orden = {
@@ -107,6 +107,11 @@ const Checkout = () => {
                     error && <h3> {error} </h3>
                 }
                 <button type="submit" className="btn btn-primary">Pay</button>
+                {
+                    ordenId && (
+                        <strong>Thanks for shopping, you order id is: {ordenId} </strong>
+                    )
+                }
       </form>
 
     </div>
