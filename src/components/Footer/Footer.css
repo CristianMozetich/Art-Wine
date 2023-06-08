@@ -4,3 +4,18 @@
     background-color: #0d1b2a;
     color: white;
 }
+
+i{
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+i:hover{
+    color: green;
+    transition: 0.3s;
+
+}
+
+.contact{
+    cursor: pointer;
+}

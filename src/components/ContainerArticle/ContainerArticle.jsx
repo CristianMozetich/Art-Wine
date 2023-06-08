@@ -13,7 +13,7 @@ const ContainerArticle = () => {
 
   return (
     <>
-    <Article title="Unleash Your Senses: A Journey Through Art & Wine" img="../../../assets/img/vinoArt.avif" >
+    <Article title="Art & Wine" img="../../../assets/img/vinoArt.avif" >
         <img className='imgArticle m-2' src="../../../assets/img/vinosArt.avif" alt="wine" />
         <img className='imgArticle m-2' src="../../../assets/img/wineArt2.jpg" alt="vino" />
         <ul>
