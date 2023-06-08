@@ -4,8 +4,8 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div className='footer text-center p-3'>
-        <h5>Wine & Art</h5>
-        <h6>© 2023 Art & Wine Inc</h6>
+        <h5>Art & Wine</h5>
+        <h6>© 2023 Art & Wine Company</h6>
         <div>
           <i className="fa-brands fa-whatsapp m-2"></i>
           <i className="fa-brands fa-facebook m-2"></i>
