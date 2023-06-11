@@ -4,7 +4,7 @@ import { getFirestore } from "firebase/firestore"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBKs9PE4svVZvaQEmgJHx4rv5du3zTxbl4",
+  apiKey: import.meta.env.VITE_REACT_APP_FIREBASE_API_KEY,
   authDomain: "wineandart-proyecto.firebaseapp.com",
   projectId: "wineandart-proyecto",
   storageBucket: "wineandart-proyecto.appspot.com",
