@@ -2,15 +2,15 @@ import './NavBar.css'
 import { Link, NavLink } from 'react-router-dom'
 import CartWidget from '../CartWidget/CartWidget'
 
+
 const NavBar = () => {
   const linkStyle = {
     textDecoration: 'none',
     color: 'inherit',
   };
   const imgLogo = "../assets/img/wineLogo-removebg-preview-removebg-preview.png"
-
   return (
-      <header className="navbar navbar-expand-lg p-0 justify-content-end fixed">
+      <header className="navbar navbar-expand-lg p-0 justify-content-end fixed-top">
         <div className="container-fluid p-0 m-0">
           <Link to={"/"} style={linkStyle} className='d-flex align-items-center'>
             <img className='imgLogo m-0 p-0' src={imgLogo} alt="argLogo"/>
