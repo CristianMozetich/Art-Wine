@@ -1,6 +1,13 @@
+
+  
 .navbar{
     background-color: #0d1b2a;
     color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 .imgLogo{
     width: 5rem;
