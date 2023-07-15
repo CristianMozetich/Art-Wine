@@ -1,7 +1,9 @@
+header{
+    overflow: hidden;
+}
 .navbar{
     background-color: #0d1b2a;
     color: white;
-    overflow: hidden;
 }
 .imgLogo{
     width: 5rem;
