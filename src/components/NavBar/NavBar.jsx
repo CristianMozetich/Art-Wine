@@ -1,7 +1,6 @@
 import './NavBar.css'
 import { Link, NavLink } from 'react-router-dom'
 import CartWidget from '../CartWidget/CartWidget'
-import { CartProvider } from '../../context/CartContext'
 
 const NavBar = () => {
   const linkStyle = {
@@ -9,6 +8,7 @@ const NavBar = () => {
     color: 'inherit',
   };
   const imgLogo = "../assets/img/wineLogo-removebg-preview-removebg-preview.png"
+
   return (
       <header className="navbar navbar-expand-lg p-0 justify-content-end fixed-top">
         <div className="container-fluid p-0 m-0">
