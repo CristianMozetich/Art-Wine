@@ -19,9 +19,9 @@ const Article = () => {
         <Link to={"/categoria/3"} className='btn'>Merlot</Link>
     </article>
     <div className='imagenes'>
-      <img src="../../../public/assets/img/vinoArt.avif" alt="" />
-      <img src="../../../public/assets/img/wineArt2.jpg" alt="" />
-      <img src="../../../public/assets/img/vinosArt.avif" alt="" />
+      <img src="/assets/img/vinoArt.avif" alt="" />
+      <img src="/assets/img/wineArt2.jpg" alt="" />
+      <img src="/assets/img/vinosArt.avif" alt="" />
     </div>
     </>
   )
