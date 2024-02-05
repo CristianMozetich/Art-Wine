@@ -3,12 +3,12 @@ import NavBar from './components/NavBar/NavBar'
 import Footer from './components/Footer/Footer'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
-import ContainerArticle from './components/ContainerArticle/ContainerArticle'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Form from './components/Form/Form'
 import { CartProvider } from './context/CartContext'
 import Cart from './components/Cart/Cart'
 import Checkout from './components/Checkout/Checkout'
+import Article from './components/Article/Article'
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <BrowserRouter>
           <NavBar />
           <Routes>
-            <Route path='/' element={ <ContainerArticle /> } />
+            <Route path='/' element={ <Article /> } />
             <Route path='/categoria/:idCategoria' element={<ItemListContainer/>} />
             <Route path='/Item/:idItem' element={<ItemDetailContainer />} />
             <Route path='/formulario' element={<Form/>} />
