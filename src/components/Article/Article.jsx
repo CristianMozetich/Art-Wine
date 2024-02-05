@@ -14,9 +14,11 @@ const Article = () => {
     <>
     <article className='artWine'>
         <h2 className='m-2' data-aos="fade-right" data-aos-duration="1000">Art & Wine</h2>
+        <div className='links'>
         <Link to={"/categoria/1"} ><button className='btn btn-dark m-2 p-2'>Malbec</button></Link>
-        <Link to={"/categoria/2"} ><button className='btn btn-dark m-2 p-2'>Cavernet Sauvignon</button></Link>
+        <Link to={"/categoria/2"} ><button className='btn btn-dark m-2 p-2'>Cavernet</button></Link>
         <Link to={"/categoria/3"} ><button className='btn btn-dark m-2 p-2'>Merlot</button></Link>
+        </div>
     </article>
     <div className='imagenes'>
       <img src="/assets/img/vinoArt.avif" alt="" />
